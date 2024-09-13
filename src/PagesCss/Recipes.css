@@ -1,0 +1,129 @@
+.recipe-page {
+  /* width: 100%; */
+  /* height: 58.2vh; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.previous-searches {
+  display: block;
+  cursor: pointer;
+}
+.previous-searches h2 {
+  color: var(--text-color);
+  margin-bottom: 0.5em;
+}
+
+.previous-searches-container {
+  /* display: ; */
+}
+.search-item {
+  background-color: var(--primary-color);
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0 1em 1em 0;
+  color: white;
+  transform: translateX(100%);
+  opacity: 0;
+  border-radius: 30px;
+  box-shadow: 0px 6px 6px var(--shadow-color);
+  animation: calc(0.5s * var(--animation-speed)) slideInRight forwards;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  justify-content: flex-end;
+  height: 40px;
+}
+.search-box input {
+  height: 35px;
+}
+input {
+  min-width: 250px;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns {
+  height: 35px;
+  padding-block: 0.4em;
+  padding-inline: 0.75em;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: center; /* Center items horizontally */
+  align-items: start; /* Align items to the top of the grid cells */
+  width: 100%; /* Ensure the grid container takes full width */
+  gap: 1.5em;
+}
+.sorry {
+  /* border: 2px solid black; */
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 40%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sry-img {
+  width: 200px;
+  /* mix-blend-mode: multiply; */
+  color: var(--text-color);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+.sry-text {
+  font-size: 2rem;
+  margin-left: -20%;
+  color: var(--text-color);
+  font-weight: 700;
+  font-family: cursive;
+  filter: drop-shadow(5px 5px 15px #f10000);
+}
+.search {
+  padding: 5px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 20%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.search-img {
+  width: 200px;
+  height: 400px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+.search-text {
+  /* border: 1px solid black; */
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-color);
+  font-family: cursive;
+  filter: drop-shadow(5px 5px 15px #f10000);
+}

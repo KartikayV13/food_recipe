@@ -1,0 +1,63 @@
+.chief-card {
+  display: flex;
+  height: 120px;
+  margin-bottom: 10px;
+}
+.chief-card img {
+  width: 120px;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px var(--shadow-color);
+}
+.chief-card-info {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  /* box-shadow: 0 3px 6px var(--shadow-color); */
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+}
+.chief-card-info:hover {
+  box-shadow: 0 3px 6px var(--shadow-color);
+}
+.chief-card-name {
+  font-size: 1.5em;
+  display: inline-flex;
+  margin-top: 5px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.chief-recipe-count,
+.chief-cuisine {
+  font-size: 1em;
+  color: var(--text-color);
+}
+.chief-icons {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0 0 10px;
+  font-size: 1.2em;
+}
+.fb {
+  color: #4267b2;
+  background-color: transparent;
+}
+
+.insta {
+  color: #fff;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 0.2em;
+}
+.tweet {
+  color: #1da1f2;
+}

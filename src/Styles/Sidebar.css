@@ -1,0 +1,68 @@
+.sidebar {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 260px;
+  z-index: 998;
+  background-color: var(--background-color);
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.2), 3px 0 5px var(--shadow-color);
+  animation: slideInLeft 0.3s ease-in-out; /* Apply the animation */
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-left: 0.4em solid transparent;
+  margin-bottom: 1em;
+  /* border: 1px solid black; */
+  color: var(--text-color);
+  font-size: 1.1em;
+  text-decoration: none;
+  transform: translateX(-100%);
+  animation: slideInLeft 0.5s forwards;
+}
+/* Manually setting the animation delay for each nth-child */
+.sidebar-link:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.sidebar-link:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.sidebar-link:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.sidebar-link.active {
+  border-left-color: var(--primary-color);
+}
+.sidebar-link .sidebar-icons {
+  color: black;
+  width: 1.2em;
+  margin-right: 0.5em;
+  height: 1.2em; /* Ensures the icon is square */
+  display: flex;
+  align-items: center; /* Align the icon vertically within its container */
+  justify-content: center; /* Center the icon horizontally within its container */
+}
+.sidebar-link:hover {
+  border-left-color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%); /* Start outside of the view */
+  }
+  to {
+    transform: translateX(0); /* End at its final position */
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .sidebar {
+    display: none;
+  }
+}

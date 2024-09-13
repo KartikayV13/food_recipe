@@ -1,0 +1,60 @@
+.sections {
+  display: block;
+  align-items: center;
+  margin-bottom: 3vw;
+  margin-top: 50px;
+}
+.d-block {
+  display: block;
+}
+.options-container {
+  box-shadow: 0 5px 10px var(--shadow-color);
+  padding: 1em;
+  border-radius: 5px;
+  border-left: 0.5em solid var(--primary-color);
+  background-color: var(--background-light);
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+}
+.d-block h2 {
+  font-size: 1.75em;
+  color: var(--text-color);
+}
+.options {
+  height: 3.5em;
+  width: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 6px var(--shadow-color);
+  border-radius: 5px;
+}
+.light {
+  background-color: white;
+}
+.dark {
+  background-color: black;
+}
+.chk {
+  font-size: 1.25em;
+}
+.check {
+  height: 2.5em;
+  width: 2.5em;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+.btn-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn span {
+  display: inline-block;
+  margin-left: 0.5em;
+}
