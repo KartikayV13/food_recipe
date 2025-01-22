@@ -21,7 +21,7 @@ const Herosection = () => {
       <div className="col typography">
         <h1 className="title">What are we about</h1>
         <p className="info">
-          Find-Food-Recipe is aplace where you can please your soul and tummy
+          Find-Food-Recipe is a place where you can please your soul and tummy
           with delicious food recepies of all the cuisine. And our servised is
           absolutely free. so start exploring now
         </p>
