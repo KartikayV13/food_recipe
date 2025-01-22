@@ -43,7 +43,7 @@ const ChiefSection = () => {
   ];
   return (
     <div className="sections chiefs">
-      <h1 className="title">Our Top Chiefs</h1>
+      <h1 className="title">Our Top Chefs</h1>
 
       <div className="chief-container">
         {/* <ChiefCard />
