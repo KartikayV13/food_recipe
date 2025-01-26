@@ -1,3 +1,14 @@
+#FOOD_RECIPE APP
+
+In this app 
+you can search for the food you want to make by their name
+and the app will provide the recipe step-by-step with the ingredients which are required
+and you can follow the steps and in the end you will get the perfect dish you wanted
+We used the API to fetch the details for the dishes which are provided in the app may be some dishes are not be available
+this is because the API don't have them
+But in the positive note you got the search box with that you can search the dish which you have to make and you will get the recipe.
+#have fun with the app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
